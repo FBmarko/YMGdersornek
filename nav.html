@@ -1,106 +1,36 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tablo</title>
+    <title>Navbar</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
         }
-
-        .tablo-container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .tablo-baslik {
-            background-color: #0078d7;
-            color: #ffffff;
-            text-align: center;
-            padding: 15px;
-            font-size: 1.5em;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #dddddd;
-        }
-
-        th {
-            background-color: #f4f4f9;
-            color: #333333;
-            font-weight: bold;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .alt-bilgi {
-            text-align: center;
+        .navbar {
+            display: flex;
+            background-color: #333;
             padding: 10px;
-            font-size: 0.9em;
-            color: #666666;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="tablo-container">
-        <div class="tablo-baslik">Öğrenci Not Tablosu</div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Ad Soyad</th>
-                    <th>Ders</th>
-                    <th>Not</th>
-                    <th>Durum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ali Yılmaz</td>
-                    <td>Matematik</td>
-                    <td>85</td>
-                    <td>Geçti</td>
-                </tr>
-                <tr>
-                    <td>Ayşe Demir</td>
-                    <td>Fizik</td>
-                    <td>72</td>
-                    <td>Geçti</td>
-                </tr>
-                <tr>
-                    <td>Mehmet Kaya</td>
-                    <td>Kimya</td>
-                    <td>45</td>
-                    <td>Kaldı</td>
-                </tr>
-                <tr>
-                    <td>Elif Çelik</td>
-                    <td>Biyoloji</td>
-                    <td>90</td>
-                    <td>Geçti</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="navbar">
+        <a href="bot-tablosu.html">Bot Tablosu</a>
+        <a href="ogrenci-bilgileri.html">Öğrenci Bilgileri</a>
     </div>
 </body>
 </html>
