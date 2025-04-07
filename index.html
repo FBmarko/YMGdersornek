@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilk Sayfa</title>
+    <title>Tablo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Merhaba Dünya Ben Mehmet Turan</h1>
+    <h1 style="text-align: center;">Tablo ornegi</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Isim</th>
+                <th>Yas</th>
+                <th>Sehir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mehmet Turan</td>
+                <td>24</td>
+                <td>Gaziantep</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Berat Celik</td>
+                <td>19</td>
+                <td>Malatya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Onur Boray Demir</td>
+                <td>24</td>
+                <td>Maras</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
-</html>
+</html></html>
